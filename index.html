@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Foodie Restaurant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Foodie Restaurant</h1>
+<nav>
+<a href="#gallery">Gallery</a>
+<a href="#menu">Menu</a>
+<a href="#cart">Cart</a>
+<a href="#login">Login</a>
+<a href="#booking">Book Table</a>
+</nav>
+</header>
+
+<!-- Gallery Section -->
+
+<section id="gallery">
+<h2>Food Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+
+</div>
+</section>
+
+
+<!-- Menu Section -->
+
+<section id="menu">
+<h2>Menu</h2>
+
+<div class="menu-item">
+<h3>Pizza</h3>
+<p>$10</p>
+<button onclick="addToCart('Pizza',10)">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+<h3>Burger</h3>
+<p>$8</p>
+<button onclick="addToCart('Burger',8)">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+<h3>Pasta</h3>
+<p>$12</p>
+<button onclick="addToCart('Pasta',12)">Add to Cart</button>
+</div>
+
+</section>
+
+
+<!-- Cart Section -->
+
+<section id="cart">
+<h2>Your Cart</h2>
+<ul id="cartItems"></ul>
+<p>Total: $<span id="total">0</span></p>
+</section>
+
+
+<!-- Login Section -->
+
+<section id="login">
+<h2>Login</h2>
+
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p id="loginMsg"></p>
+
+</section>
+
+
+<!-- Booking Section -->
+
+<section id="booking">
+<h2>Book a Table</h2>
+
+<input type="text" id="name" placeholder="Your Name">
+<input type="date" id="date">
+<input type="number" id="people" placeholder="Number of People">
+
+<button onclick="bookTable()">Book Now</button>
+
+<p id="bookingMsg"></p>
+
+</section>
+
+
+<footer>
+<p>© 2026 Foodie Restaurant</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<script src="script.js"></script>
+
+</body>
+</html>
